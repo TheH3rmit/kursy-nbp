@@ -1,0 +1,20 @@
+name: Witaj z chmury
+on:
+  workflow_dispatch:
+
+jobs:
+  przywitanie:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Kto i dlaczego mnie uruchomił?
+        run: |
+          echo "Uruchomił(a): ${{ github.actor }}"
+          echo "Zdarzenie:    ${{ github.event_name }}"
+          date -u
+      - name: Na jakiej maszynie działam?
+        run: |
+          echo "Rdzenie: $(nproc)"
+          free -h | head -2
+          head -2 /etc/os-release
+      - name: Czy widzę Internet?
+        run: curl -s "https://api.nbp.pl/api/exchangerates/rates/a/eur/?format=json"
