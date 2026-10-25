@@ -9,3 +9,4 @@ z API Narodowego Banku Polskiego.
 ## Skład zespołu
 - Jakub - GitHub: @TheH3rmit 
 - Marcel - Github: @Marcelinder
+- Filip - Github: @filip11990
