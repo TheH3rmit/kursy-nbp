@@ -7,4 +7,5 @@ pobierania, przetwarzania i publikowania kursów walut
 z API Narodowego Banku Polskiego.
 
 ## Skład zespołu
-- Jakub - GitHub: @TheH3rmit
+- Jakub - GitHub: @TheH3rmit 
+- Marcel - Github: @Marcelinder
