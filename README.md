@@ -10,3 +10,28 @@ z API Narodowego Banku Polskiego.
 - Jakub - GitHub: @TheH3rmit 
 - Marcel - Github: @Marcelinder
 - Filip - Github: @filip11990
+
+## Podział obowiązków
+
+## Architektura projektu
+
+``` mermaid
+flowchart TD
+    A["GitHub Actions<br/>Harmonogram / ręcznie"]
+    B["Python - pobieranie danych"]
+    C["NBP REST API"]
+    D["Walidacja i transformacja<br/>Kontrola duplikatów"]
+    E[("CSV - historia kursów")]
+    F["Generowanie HTML i wykresów"]
+    G["Zapis zmian do repozytorium"]
+    H["GitHub Pages"]
+
+    A --> B
+    B -->|"Żądanie HTTP"| C
+    C -->|"Kursy EUR, USD, GBP"| B
+    B --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+```
